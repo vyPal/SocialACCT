@@ -1,0 +1,45 @@
+name: SocialACCT
+main: io.github.vyPal.SocialACCT.SocialACCT
+version: 1.0.0
+author: vyPal
+commands:
+   social:
+      description: This shows the user his social status.
+      usage: /social
+      permission: scacct.social
+      permission-message: You don't have scacct.social
+   link: 
+      description: This links a social account to a username.
+      usage: /link youtube/twitch <link including https://>
+      permission: scacct.link
+      permission-message: You don't have scacct.link
+   stream:
+      description: This broadcasts a message about a player's stream to all users on server.
+      usage: /stream youtube/twitch (or leave empty for both)
+      permission: scacct.stream
+      permission-message: You don't have scacct.stream
+   video:
+      description: This broadcasts a message about a player's video to all users on server.
+      usage: /video youtube/twitch (or leave empty for both)
+      permission: scacct.video
+      permission-message: You don't have scacct.video
+permissions:
+   scacct.*:
+      description: Gives access to all SocialACCT commands.
+      children:
+         scacct.social: true
+         scacct.link: true
+         scacct.stream: true
+         scacct.video: true
+   scacct.social:
+      description: Allows the user to display their social connections
+      default: true
+   scacct.link:
+      description: Allows the user to create links with their social media
+      default: true
+   scacct.stream:
+      description: Allows the user to announce a Live-stream
+      default: true
+   scacct.video:
+      description: Allows the user to announce a new video
+      default: true

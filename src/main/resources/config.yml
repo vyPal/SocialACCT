@@ -1,0 +1,8 @@
+messages:
+   twitch-linked: Player's Twitch account is linked!
+   twitch-not-linked: Player does not have a linked Twitch account!
+   youtube-linked: Player's YouTube account is linked!
+   youtube-not-linked: Player does not have a linked YouTube account!
+   social-linked: Linked!
+   no-permission-social: I am sorry, but you do not have the permission to display your social links!
+   no-permission-link: I am sorry, but you do not have the permission to create social links!
